@@ -1,0 +1,4 @@
+Task 2 Query
+select user_id,action_date,action_name,error_message,device
+from checkout_actions
+where action_name like 'checkout%' and right(action_name,1)='l';

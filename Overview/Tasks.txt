@@ -1,0 +1,109 @@
+Task 1:
+
+In this part, your assignment involves sourcing the data files that will later be imported into the Tableau workbook. You'll perform this task using MySQL, where your first step is to import the database from the 365_checkout_database.sql file. Subsequently, you’ll implement the necessary queries and obtain the information for creating the dashboard graphs.
+
+Use the tables checkout_actions and checkout_carts from the 365_checkout_database to retrieve a result set covering the entire period and containing the following fields:
+
+action_date: the day on which the checkout activity took place
+count_total_carts: the count of shopping carts created each day during the specified timeframe
+count_total_checkout_attempts: the count of purchase attempts each day
+count_successful_checkout_attempts: the count of successful purchases each day
+Creating such a result set is crucial because it provides a consolidated view of daily checkout activities over the specified period. By analyzing this data, we can better understand user behavior patterns, identify potential issues in the checkout process, and pinpoint areas for optimization to enhance the overall user experience.
+
+
+
+________________________________________________
+
+
+Task 2: 
+
+Use the tables checkout_actions and checkout_carts from the 365_checkout_database to retrieve a new result set called checkout_errors containing the following fields:
+
+user_id – the identification number of the student attempting to checkout
+action_date – the date of the checkout attempt
+action_name – the text detailing the specific action performed by the user
+error_message – the text with the received error (if any)
+device – the type of the used device (desktop or mobile)
+Generating this result set is essential because it offers a comprehensive overview of checkout errors encountered by users during the defined time frame. Through its analysis, we can identify common issues students face during checkout—enabling us to make informed decisions on potential enhancements or changes to the platform.
+
+This insight is valuable in optimizing the checkout experience and minimizing obstacles, which can directly contribute to increased user satisfaction and revenue.
+
+
+_______________________________________________________
+
+
+Task 3:
+
+Creating the Charts in Tableau: Monthly Checkout Success Rate
+To construct the desired story, begin by creating individual sheets in Tableau. Next, merge these sheets into dashboards and position the dashboards on distinct story points. This approach ensures you have a comprehensive, interactive visualization tool to aid your data analysis.
+
+Begin by utilizing the checkout_steps data source to craft a dual graph illustrating the monthly checkout success rate. This graph should display the total number of checkout attempts and the percentage of successful ones. Proceed with the steps provided below to accomplish this.
+
+
+___________________________________________________
+
+
+Task 4:
+
+Creating the Charts in Tableau: Monthly Cart Abandonment Rate
+Now that you're ready with the first visualization, use the checkout_steps table to create another dual graph about the monthly number of purchase carts (a bar chart) and the relevant abandonment rate (a line chart).
+
+
+
+________________________________________________________
+
+Task 5:
+
+Creating the Charts in Tableau: Error Messages
+The third visualization for the story shows the most frequent error messages encountered during failed checkout attempts. Create a horizontal bar chart showing the most common errors.
+
+
+_________________________________________________________
+
+Task 6:
+
+Creating the Charts in Tableau: Device Distribution
+For your upcoming task, create a horizontal stacked bar chart that categorizes device usage into percentages for mobile and desktop. This will let you quickly determine which device is more commonly used.
+
+________________________________________________________
+
+
+Task 7:
+
+Creating the Tableau Story
+Well done on completing all the necessary graphs! Now, your subsequent task is to distribute these graphs over three story points.
+
+Story Point 1 includes the dual graph of monthly checkout attempts and the relevant success rates.
+Story Point 2 comprises the dual graph about the monthly number of checkout carts and the relevant abandonment rates.
+Story Point 3 encompasses two horizontal stacked bar charts: one with the most common error messages and one with the proportions of devices used for checkout.
+
+
+________________________________________________
+
+Task 8
+
+Formatting the Story
+Now that you've completed the story-based dashboard, it's time to fine-tune its appearance. Modify the graph colors, tweak the dimensions, and add fitting titles.
+
+Recommended HTML color codes:
+
+Shading of the story: #545c69
+Navigator's shading: #e6e7e9
+Checkout Success Rate line chart: #293343
+Checkout Success Rate bar chart: #3dafb8
+Cart Abandonment Rate line chart: #550000
+Cart Abandonment Rate bar chart: #8cdae3
+Error Messages and Devices desktop bars: #293343
+Error Messages and Devices mobile bars: #3a9ea7
+
+_____________________________________________________
+
+Task 9:
+
+Now that you’ve successfully created your Tableau dashboard, you’re ready to gain valuable insights from it and propose areas of improvement. Based on the findings gathered from the Tableau dashboard, provide a comprehensive analysis report including the current state of affairs, business objective, your chosen hypothesis, and suggested actionable insights. Justify your selections based on data interpretations and potential impacts on the overall user experience.
+
+Begin by examining the story pages and identifying trends.
+
+Are there months that underperform or outperform others significantly?
+Can you discern a correlation between the error messages received and the devices on which they occurred?
+What suggestions can you make to enhance the overall checkout process?
